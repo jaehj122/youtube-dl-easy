@@ -41,7 +41,7 @@ function Set-Format {
 function Check-Format {
 	Write-Host "Output will be: " 
 	Write-Host (& ./youtube-dl.exe $format $URL --get-format)
-	Read-Host "Ok? (Enter Y/N)"
+	Read-Host "Ok? (Enter Yes/No)"
 }
 
 # For choices that require manually selecting formats using format codes (Choices 4 & 5)
@@ -77,7 +77,7 @@ Write-Output ""
 Write-Output 'REQUIRES the youtube-dl program from: https://youtube-dl.org/'
 Write-Output 'Supported Video Sites: https://ytdl-org.github.io/youtube-dl/supportedsites.html'
 Write-Output ""
-$URL = Read-Host "Enter video URL here"
+$URL = Read-Host "Enter video link here"
 
 # Lists all formats for video
 Write-Output ""
@@ -94,6 +94,7 @@ while ($confirm -ne "y") {
 	Write-Output "4. Let me choose the video and audio formats to combine"
 	Write-Output "5. Download ONLY audio or video"
 	Write-Output "6. -UPDATE PROGRAM- (Admin May Be Required)"
+	Write-Output "7. -Quit Program 
 	Write-Output ""
 
 	$choice = Read-Host "Type your choice number" #Takes in choice from user
