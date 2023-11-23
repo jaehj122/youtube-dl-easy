@@ -1,14 +1,14 @@
 # =====================================
-#        Script Author: ThioJoe
-#        Github.com/ThioJoe
+#        Script Author: Jae Goodwin
+#        Github.com/jaehj122
 # =====================================
-#        Version: 1.0
+#        Version: 1.1
 # =====================================
 
 # ----------------------------------- IMPORTANT STUFF -----------------------------------------
-#
+# This is a fork
 # THIS SCRIPT REQUIRES the "youtube-dl" program: https://yt-dl.org/
-#
+# Thanks to ThioJoe for creating this nice little dl-script for youtube. (Github.com/ThioJoe)
 # Direct link to latest youtube-dl executable: https://yt-dl.org/latest/youtube-dl.exe
 # YouTube-dl documentation: https://github.com/ytdl-org/youtube-dl/blob/master/README.md#readme
 # Supported sites for Downloading: https://ytdl-org.github.io/youtube-dl/supportedsites.html
@@ -77,7 +77,7 @@ Write-Output ""
 Write-Output 'REQUIRES the youtube-dl program from: https://youtube-dl.org/'
 Write-Output 'Supported Video Sites: https://ytdl-org.github.io/youtube-dl/supportedsites.html'
 Write-Output ""
-$URL = Read-Host "Enter video link here"
+$URL = Read-Host "Enter the video link here"
 
 # Lists all formats for video
 Write-Output ""
@@ -93,7 +93,7 @@ while ($confirm -ne "y") {
 	Write-Output "3. Download the highest quality audio + video formats, attempt merge to mp4"
 	Write-Output "4. Let me choose the video and audio formats to combine"
 	Write-Output "5. Download ONLY audio or video"
-	Write-Output "6. -UPDATE PROGRAM- (Admin May Be Required)"
+	Write-Output "6. -UPDATE PROGRAM- ( Warning : Admin May Be Required)"
 	Write-Output "7. -Quit Program 
 	Write-Output ""
 
